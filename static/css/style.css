@@ -1,0 +1,5 @@
+body {
+    background-image: linear-gradient(direction, gray, #003666);
+    font: Arial 16px red;
+    color: black;
+}
