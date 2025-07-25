@@ -4,8 +4,9 @@ body {
     color: white;
 }
 .navbar {
-    padding: 12px 0;
+    padding: 12px 0px;
     background-color:#1b2838;
+    width: 100%;
 }   
 
 .container {
@@ -16,6 +17,8 @@ body {
     align-items: center;
     max-width: 1200px;
     padding: 0 20px;
+    box-sizing: border-box;
+
 }
 
 .left{
@@ -93,7 +96,6 @@ main {
 
 .right :hover{
     color: #c7d5e0;
-
 
 }
 
