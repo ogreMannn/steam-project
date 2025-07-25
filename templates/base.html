@@ -10,18 +10,24 @@
     <header>
         <nav class="navbar">
             <div class="container">
-                <div class="logo-container">
-                    <img src="{{url_for('static',filename='image/steam-logo.png')}}"
-                    alt="Steam logo" class="logo">
-                    <p class="logo-word"> Steam </p>
+                <div class="left">
+                    <div class="logo-container">
+                        <img src="{{url_for('static',filename='image/steam-logo.png')}}"
+                        alt="Steam logo" class="logo">
+                        <p class="logo-word"> Steam </p>
+                    </div>
                 </div>
-                <ul class="nav-links">
-                    <li class="Home-link"><a href="/">Home</a></li>
-                    <li class="Community-link"><a href="/Community">Community</a></li>
-                    <li class="Store-link"><a href="/Store">Store</a></li>
-                    <li class="About-link"><a href="/About">About</a></li>
-                </ul>
-            </div>
+                <div class="center">
+                    <ul class="nav-links">
+                        <li class="Home-link"><a href="/">Home</a></li>
+                        <li class="Community-link"><a href="/Community">Community</a></li>
+                        <li class="Store-link"><a href="/Store">Store</a></li>
+                        <li class="About-link"><a href="/About">About</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <a href="Login" class="login">login</a>
+                </div>
         </nav>
     </header>
     <main>
