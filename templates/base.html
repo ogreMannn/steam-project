@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static',filename = 'css/style.css')}}">
-    <title> Steam project </title>
+    <title> Steam project</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/Community">Community</a></li>
-                <li><a href="/Store">Store</a></li>
-                <li><a href="/About">About</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    {% block content %}
-    {% endblock %}
-    
-    
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo-container">
+                    <img src="{{url_for('static',filename='image/steam-logo.png')}}"
+                    alt="Steam logo" class="logo">
+                    <p class="logo-word"> Steam </p>
+                </div>
+                <ul class="nav-links">
+                    <li class="Home-link"><a href="/">Home</a></li>
+                    <li class="Community-link"><a href="/Community">Community</a></li>
+                    <li class="Store-link"><a href="/Store">Store</a></li>
+                    <li class="About-link"><a href="/About">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+    {% block content %} {% endblock %}
+    </main>
 </body>
 </html>
